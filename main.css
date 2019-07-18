@@ -1,0 +1,622 @@
+body
+{
+	background-color:#000000;
+	color:#FFFFFF;
+}
+
+#cvs
+{
+	border: 10px solid #000000;
+  	background-color:#FFFFFF;       
+  	float: left;
+  	cursor:url(https://i.imgur.com/kxk55ZQ.png), pointer;
+}
+
+#color-picker {
+  border: 3px solid rgba(15, 15, 15, 0.2);
+}
+
+
+
+.selected {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 2px solid rgba(15, 15, 15, 0.2);
+}
+
+
+
+.header
+{
+	width:100%;
+  	height:0px;
+	float:left;
+	padding:2px;
+}
+
+.topbar
+{
+  	width:100%;
+  	padding:7px;
+  	background-colr:#000000;
+}
+    
+#reset
+{
+  	width: 100px; 
+	height: 40px;
+	border-width: 1px; 
+	border-radius: 3px;
+	background: transparent; /*背景透明*/
+  	opacity: 0.4; /*透明度*/
+	cursor: pointer;
+	outline: none;
+	font-family: Microsoft YaHei; 
+	color: white; 
+	font-size: 17px; 
+}
+#reset:hover
+{
+  	width: 100px;
+	height: 40px; 
+	border-width: 0px; 
+	border-radius: 3px;
+	background: #ffffff; 
+  	opacity: 0.7;
+	cursor: pointer; 
+	outline: none; 
+	font-family: Microsoft YaHei;
+	color: black;
+	font-size: 17px; 
+
+}
+
+#choose
+{
+  	margin:20px 20px 10px 0px;
+  	width: 170px; 
+	height: 40px;
+	border-width: 1px; 
+	border-radius: 3px;
+	background: transparent; /*背景透明*/
+  	opacity: 0.4; /*透明度*/
+	cursor: pointer;
+	outline: none;
+	font-family: Microsoft YaHei; 
+	color: white; 
+	font-size: 17px; 
+}
+
+#choose:hover
+{
+  	margin:20px 20px 10px 0px;
+  	width: 170px;
+	height: 40px; 
+	border-width: 0px; 
+	border-radius: 3px;
+	background: #ffffff; 
+  	opacity: 0.7;
+	cursor: pointer; 
+	outline: none; 
+	font-family: Microsoft YaHei;
+	color: black;
+	font-size: 17px; 
+}
+
+#download2
+{
+  	margin:20px 20px 10px 0px;
+  	width: 170px; 
+	height: 40px;
+	border-width: 1px; 
+	border-radius: 3px;
+	background: transparent; /*背景透明*/
+  	opacity: 0.4; /*透明度*/
+	cursor: pointer;
+	outline: none;
+	font-family: Microsoft YaHei; 
+	color: white; 
+	font-size: 17px; 
+}
+
+#download2:hover
+{
+  	margin:20px 20px 10px 0px;
+  	width: 170px;
+	height: 40px; 
+	border-width: 0px; 
+	border-radius: 3px;
+	background: #ffffff; 
+  	opacity: 0.7;
+	cursor: pointer; 
+	outline: none; 
+	font-family: Microsoft YaHei;
+	color: black;
+	font-size: 17px;  
+}
+
+#setwidth
+{
+  	margin:20px 20px 10px 0px;
+  	width: 70px; 
+	height: 35px;
+	border-width: 1px; 
+	border-radius: 3px;
+	background: transparent; /*背景透明*/
+  	opacity: 0.4; /*透明度*/
+	cursor: pointer;
+	outline: none;
+	font-family: Microsoft YaHei; 
+	color: white; 
+	font-size: 17px;
+  	text-align:center;
+}
+
+#setwidth:hover
+{
+  	margin:20px 20px 10px 0px;
+  	width: 70px;
+	height: 35px; 
+	border-width: 0px; 
+	border-radius: 3px;
+	background: #ffffff; 
+  	opacity: 0.7;
+	cursor: pointer; 
+	outline: none; 
+	font-family: Microsoft YaHei;
+	color: black;
+	font-size: 17px;  
+  	text-align:center;
+}
+
+#setheight
+{
+  	margin:20px 20px 10px 0px;
+  	width: 70px; 
+	height: 35px;
+	border-width: 1px; 
+	border-radius: 3px;
+	background: transparent; /*背景透明*/
+  	opacity: 0.4; /*透明度*/
+	cursor: pointer;
+	outline: none;
+	font-family: Microsoft YaHei; 
+	color: white; 
+	font-size: 17px;
+  	text-align:center;
+}
+
+#setheight:hover
+{
+  	margin:20px 20px 10px 0px;
+  	width: 70px;
+	height: 35px; 
+	border-width: 0px; 
+	border-radius: 3px;
+	background: #ffffff; 
+  	opacity: 0.7;
+	cursor: pointer; 
+	outline: none; 
+	font-family: Microsoft YaHei;
+	color: black;
+	font-size: 17px;
+  	text-align:center;
+}
+
+#setsize
+{
+  	margin:20px 20px 10px 0px;
+  	width: 170px; 
+	height: 40px;
+	border-width: 1px; 
+	border-radius: 3px;
+	background: transparent; /*背景透明*/
+  	opacity: 0.4; /*透明度*/
+	cursor: pointer;
+	outline: none;
+	font-family: Microsoft YaHei; 
+	color: white; 
+	font-size: 17px; 
+}
+
+#setsize:hover
+{
+  	margin:20px 20px 10px 0px;
+  	width: 170px;
+	height: 40px; 
+	border-width: 0px; 
+	border-radius: 3px;
+	background: #ffffff; 
+  	opacity: 0.7;
+	cursor: pointer; 
+	outline: none; 
+	font-family: Microsoft YaHei;
+	color: black;
+	font-size: 17px;  
+}
+
+#previous
+{
+  	/*margin:20px 20px 10px 0px;*/
+  	width: 80px; 
+	height: 40px;
+	border-width: 1px; 
+	border-radius: 3px;
+	background: transparent; /*背景透明*/
+  	opacity: 0.4; /*透明度*/
+	cursor: pointer;
+	outline: none;
+	font-family: Microsoft YaHei; 
+	color: white; 
+	font-size: 17px; 
+}
+
+#previous:hover
+{
+  	/*margin:20px 20px 10px 0px;*/
+  	width: 80px;
+	height: 40px; 
+	border-width: 0px; 
+	border-radius: 3px;
+	background: #ffffff; 
+  	opacity: 0.7;
+	cursor: pointer; 
+	outline: none; 
+	font-family: Microsoft YaHei;
+	color: black;
+	font-size: 17px;  
+}
+
+
+#next
+{
+  	/*margin:20px 20px 10px 0px;*/
+  	width: 80px; 
+	height: 40px;
+	border-width: 1px; 
+	border-radius: 3px;
+	background: transparent; /*背景透明*/
+  	opacity: 0.4; /*透明度*/
+	cursor: pointer;
+	outline: none;
+	font-family: Microsoft YaHei; 
+	color: white; 
+	font-size: 17px; 
+}
+
+#next:hover
+{
+  	/*margin:20px 20px 10px 0px;*/
+  	width: 80px;
+	height: 40px; 
+	border-width: 0px; 
+	border-radius: 3px;
+	background: #ffffff; 
+  	opacity: 0.7;
+	cursor: pointer; 
+	outline: none; 
+	font-family: Microsoft YaHei;
+	color: black;
+	font-size: 17px;  
+}
+            
+.Sidebar
+{
+	width:70%;
+	float:left;
+	height:100%;
+	background-color:#000000;
+}
+.body
+{
+	width:30%;
+	height:100%;
+	float:left;
+	background-color:#000000;
+	float:left;
+}
+.color
+{
+  
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+	cursor: pointer;/*滑鼠指標改變*/
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+	text-align: center;
+}
+.color:hover
+{
+	transform: scale(1.5, 1.5);
+	box-shadow: 0px 0px 15px white;
+}
+#red
+{
+	background-color: red;
+}
+#blue
+{
+	background-color: blue;
+}
+#green
+{
+	background-color: green;
+}
+#purple
+{
+	background-color: purple;
+}
+#yellow
+{
+	background-color: yellow;
+}
+#orange
+{
+	background-color: orange;
+}
+#pink
+{
+	background-color: pink;
+}
+#black
+{
+	background-color: black;
+}
+#white
+{
+	background-color: white;
+}
+
+/* color picker*/
+
+input[type="range"]
+{ 
+    margin:10px 20px 10px 20px;
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    height: 10px; /*range 高度*/
+    width: 300px; /*range 寬度*/
+    cursor: pointer;
+    border-radius: 10px; /* 外框圓弧 */
+}
+
+::-webkit-slider-runnable-track
+{
+    background: #ddd; /*不是範圍的顏色*/
+}
+::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    width: 20px; 
+    height: 40px;
+
+    background: #fff; /*拉霸顏色*/
+    box-shadow: -100vw 0 0 100vw #454c49; /*範圍內顏色*/
+    border: 2px solid #999; /* 1 */
+}
+
+::-moz-range-track
+{
+    height: 40px;
+    background: #ddd;
+}
+
+::-moz-range-thumb
+{
+    background: #fff;
+    height: 40px;
+    width: 20px;
+    border: 3px solid #999;
+    border-radius: 0 !important;
+    box-shadow: -100vw 0 0 100vw dodgerblue;
+    box-sizing: border-box;
+}
+
+::-ms-fill-lower
+{ 
+    background: dodgerblue;
+}
+
+::-ms-thumb
+{ 
+    background: #fff;
+    border: 2px solid #999;
+    height: 40px;
+    width: 20px;
+    box-sizing: border-box;
+}
+
+::-ms-ticks-after
+{ 
+    display: none; 
+}
+
+::-ms-ticks-before
+{ 
+    display: none; 
+}
+
+::-ms-track
+{ 
+    background: #ddd;
+    color: transparent;
+    height: 40px;
+    border: none;
+}
+
+::-ms-tooltip
+{ 
+    display: block;
+}
+
+
+.picker
+{
+  display:inline;
+ 
+}
+
+/* color picker*/
+
+
+#display
+{
+  	width: 20px;
+	height: 20px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+	cursor: pointer;/*滑鼠指標改變*/
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+	text-align: center;
+  	background:#730aa2;
+}
+#display:hover
+{
+	transform: scale(1.5, 1.5);
+	box-shadow: 0px 0px 15px white;
+}
+
+.size
+{
+  	width: 20px;
+	height: 20px;
+	float: left;
+  	margin-left:5px;
+	margin-right:5px;
+  	margin-top:10px;
+  	/*margin-bottom:5px;*/
+	/*margin-left: 10px;*/
+	cursor: pointer;/*滑鼠指標改變*/
+	border: 1px solid #000000;
+  	/*border-radius: 50%;*/
+	text-align: center;
+  	font-size:15px;
+  	background-color:#5b5b5b;
+}
+
+.shape
+{
+ 	margin-top: 20px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+  	width:20px;
+  	height:20px;
+  	border: 1px solid #FFFFFF;
+}
+
+.shape:hover
+{
+  	transform: scale(1.5, 1.5);
+	box-shadow: 0px 0px 15px white;
+  	border: 1px solid #FFFFFF;  
+
+}
+
+
+.symmetry
+{
+  
+  	display:inline;
+}
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#color-picker {
+  border: 3px solid rgba(15, 15, 15, 0.2);
+}
+
+.info {
+  width: 12em;
+  display: flex;
+  margin-left: 4em;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.selected {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 2px solid rgba(15, 15, 15, 0.2);
+}
+
+
+.radio {
+    margin: 16px 0;
+    display: block;
+    cursor: pointer;
+    input {
+        display: none;
+        & + span {
+            line-height: $radioSize;
+            height: $radioSize;
+            padding-left: $radioSize;
+            display: block;
+            position: relative;
+            &:not(:empty) {
+                padding-left: $radioSize + 8;
+            }
+            &:before,
+            &:after {
+                content: '';
+                width: $radioSize;
+                height: $radioSize;
+                display: block;
+                border-radius: 50%;
+                left: 0;
+                top: 0;
+                position: absolute;
+            }
+            &:before {
+                background: $radioBorder;
+                transition: background .2s ease, transform .4s cubic-bezier(.175, .885, .32, 2);
+            }
+            &:after {
+                background: #fff;
+                transform: scale(.78);
+                transition: transform .6s cubic-bezier(.175, .885, .32, 1.4);
+            }
+        }
+        &:checked + span {
+            &:before {
+                transform: scale(1.04);
+                background: $radioActive;
+            }
+            &:after {
+                transform: scale(.4);
+                transition: transform .3s ease;
+            }
+        }
+    }
+    &:hover {
+        input {
+            & + span {
+                &:before {
+                    transform: scale(.92);
+                }
+                &:after {
+                    transform: scale(.74);
+                }
+            }
+            &:checked + span {
+                &:after {
+                    transform: scale(.4);
+                }
+            }
+        }
+    }
+}

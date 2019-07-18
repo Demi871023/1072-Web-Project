@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wake up！大藝術家</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css" />
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+
+  <body onload="setting()">
+    <div class="header"></div>
+
+    <div class="topbar">
+      <input type="button" id="reset" value="Reset" onclick="reset()"/>
+
+      <input type="button" id="previous" value="上一步" onclick="previous()"/>
+      <input type="button" id="next" value="下一步" onclick="next()"/>
+      <!--<a href="#" download="img.png" onclick="this.href=canvas.toDataURL();" >下載</a>-->
+
+
+      <input type="button" id="download2" value="Download" onclick="downloadimg()"/>
+      <a id="download" href="#" download="img.png" onclick="this.href=canvas.toDataURL();"></a>
+      <labe style="color:#e3e3e3;">Width：<input type="text" id="setwidth"/></label>
+      <labe style="color:#e3e3e3;">Height：<input type="text" id="setheight"/></label>
+      <input type="button" id="setsize" value="Set Canvas Size" onclick="setsize()"/>
+
+    </div>
+
+
+    <div class="Sidebar">
+        <canvas width="820px" height="600px" id="cvs" onmouseup="up(event)" onmousedown="down(event)" onmousemove="mouseMove(event)" tabindex="0"></canvas>
+    </div>
+    <audio id = "normal_">
+        <source  src="normal.mp3" type="audio/mpeg">
+    </audio>
+    <audio id = "bubble">
+        <source  src="bubble.mp3" type="audio/mpeg">
+    </audio>
+    <audio id = "rect">
+        <source  src="rect.mp3" type="audio/mpeg">
+    </audio>
+
+    <input type="image" src="https://i.imgur.com/BFYaz6O.png" style="width: 375px;height: 10px">
+
+    <div class="body">
+       <div id="buttons">
+         <div id='red' class="color" onmousedown="red(event)"></div>
+         <div id='blue' class="color" onmousedown="blue(event)"></div>
+         <div id='green' class="color" onmousedown="green(event)"></div>
+         <div id='purple' class="color" onmousedown="purple(event)"></div>
+         <div id='yellow' class="color" onmousedown="yellow(event)"></div>
+         <div id='orange' class="color" onmousedown="orange(event)"></div>
+         <div id='pink' class="color" onmousedown="pink(event)"></div>
+         <div id='black' class="color" onmousedown="black(event)"></div>
+         <div id='white' class="color" onmousedown="white(event)"></div>
+         <div id='display' class="color"></div>
+        </div>
+    </div>
+
+  
+    <input type='button' id='choose' value='Choose Your Color' onclick="showcolorpicker()"/>
+    
+    <div class="picker" oninput="displaychange()" onchange="displaychange()">  
+      <div id="redtext" style="display:none">Red</div> <input type="range" min="0" max="255" step="1" id="colorpickerred" value="115" style="display:none">
+      <div id="greentext" style="display:none">Green</div> <input type="range" min="0" max="255" step="1" id="colorpickergreen" value="10" style="display:none">
+      <div id="bluetext" style="display:none">Blue</div> <input type="range" min="0" max="255" step="1" id="colorpickerblue" value="162" style="display:none">
+    </div>
+
+
+    <canvas id="color-picker" style="display: none;"></canvas>
+
+
+    <input type="image" src="https://i.imgur.com/BFYaz6O.png" style="width: 375px;height: 10px">
+
+
+    <div class="body">
+         <div id="buttonsize">
+           <div id="one" class="size" onclick="setpensize_one()">1</div>
+           <div id="two" class="size" onclick="setpensize_two()">2</div>
+           <div id="three" class="size" onclick="setpensize_three()">3</div>
+           <div id='five' class="size" onclick="setpensize_five()">5</div>
+           <div id='ten' class="size" onclick="setpensize_ten()">10</div>
+           <div id='fifteen' class="size" onclick="setpensize_fifteen()">15</div>
+           <div id='twenty' class="size" onclick="setpensize_twenty()">20</div>  
+          <div id='change' class="size">?</div>
+        </div>
+    </div>
+    
+    <div></div>
+    <input type='button' id='choose' value='Choose Pen Size' onclick="showpensize()"/>
+
+    <div id="pensizetext" style="display: none">Pen Size</div>
+    <input id="pensize" type="range" min="1" max="30" value="1" style="display:none" oninput="changepensize(event)" onchange="changepensize(event)"/>
+
+    
+
+    
+
+      
+        <!--rectangle-->
+        <div id="rectanglewidthtext" style="display: none;">Rectangle Width = <span id="widthnum"></span></div>
+        <input id="shapewidth" type="range" min="1" max="300" value="100" style="display:none;" oninput="show_change_shape_size()" onchange="show_change_shape_size()" />
+
+        <div id ="rectangleheighttext" style="display: none;">Rectangle Height = <span id="heightnum"></span></div>
+        <input id="shapeheight" type="range" min="1" max="900" value="300" style="display:none;" oninput="show_change_shape_size()" onchange="show_change_shape_size()"/>
+
+
+        
+
+
+
+
+      <input type="image" src="https://i.imgur.com/BFYaz6O.png" style="width: 375px;height: 10px">
+
+
+    <form>
+      
+      <input type="radio" name="sex" id="pen_line" checked  onclick="feat_L()" />
+      <label for="pen_line">Pen_line</label>
+      <br/>
+      
+      <input type="radio" name="sex" id="pen_circle" onclick="feat_C()" />
+      <label for="pen_circle">Pen_circle</label>
+      <br /> 
+
+      
+      <input type="radio" name="sex" id="pen_squart" onclick="feat_S()" />
+      <label for="pen_squart">Pen_squart</label>
+      <br /> 
+
+    </form>
+
+      <input type="image" src="https://i.imgur.com/BFYaz6O.png" style="width: 375px;height: 10px">
+
+    <form>
+      <input type="checkbox" name="sex" id="rainbow"  onclick="feat_R()" />
+      <label for="rainbow">Rainbow</label>
+      <br />
+   </form>
+
+      <input type="image" src="https://i.imgur.com/BFYaz6O.png" style="width: 375px;height: 10px">
+
+    <form> 
+      
+      <input type="radio" name="sex" id="normal" onclick="feat_N()" checked/>
+      <label for="normal">Normal</label>
+      <br/>
+
+      
+      <input type="radio" name="sex" id="flip"  onclick="feat_F()" />
+      <label for="flip">Flip</label>
+      <br />
+    </form>
+      <!--<input type="text" id="pieace">-->
+      <div id="setpieacetext" style="display: none;">Piece is = 1</div>
+      <input type="range" min="1" max="300" value="1" id="setpieace" oninput="setpieace()" onchange="setpieace()" style="display: none;">
+
+
+  
+  <script type="text/javascript" src="colorpicker.js"></script>
+
+  </body>
+
+</html>
+
